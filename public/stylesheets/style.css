@@ -1,0 +1,159 @@
+html{
+	height: 100%;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.chat-page{
+  background-image: url('../images/background.png');
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+.complete-height{
+	height: 100% !important;
+}
+
+.no-padding{
+	padding: 0px;
+}
+
+.paddingTop4{
+	padding-top: 4px;
+}
+
+.chatBox{
+		margin-top: 7%;
+		min-height: 90%;
+		height: 90%;
+		background-color: white;
+		padding-left: 0px;
+		padding-right: 0px;
+}
+@media all and (min-width: 500px){
+	.chatBox{
+		margin-top: 7%;
+		min-height: 80%;
+		height: 80%;
+		background-color: white;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+
+.available-user{
+	background-color: #d9dbea;
+	border-right: 1px solid black;
+	min-height: 100%;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 2px;
+}
+
+.chat-messages{
+	min-height: 90%;
+	height: 90%;
+	width: 100%;
+	padding: 0px;
+	overflow: scroll;
+}
+
+.chat-type{
+	width: 100%;
+	height: 43px;
+	padding: 0px;
+	border-top: 1px solid black;
+}
+
+.custom-textarea-style{
+	padding-right: 15%;
+}
+
+.custom-button{
+	position: absolute;
+	right: 2px;
+	bottom: 2%;
+	z-index: 100;
+	float: right;
+}
+
+.complete-height-83{
+	height: 83% !important;
+}
+
+@media all and (min-width: 768px){
+.complete-height-83{
+	height: 92% !important;
+}
+}
+
+.common-chat{
+	max-width: 80%;
+	min-height: 30px;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 0.5em;
+	display: block;
+	word-wrap: break-word;
+}
+
+.my-chat{
+	background-color: #c5e7c4;
+}
+
+.other-chat{
+	background-color: #d6eaec;
+}
+
+.containerdivNewLine {
+ clear: both; 
+ float: left; 
+ display: block; 
+ position: relative; 
+} 
+
+.lightText{
+	color: #7a6a6a;
+	float: right;
+}
+
+.availability{
+	height: 5px;
+	width: 5px;
+}
+
+.banner{
+	position: fixed;
+	width: 60%;
+	height: 45px;
+	background-color: white;
+	border-bottom: 2px solid black;
+	padding-left: 2%;
+}
+@media all and (min-width: 768px){
+.banner{
+	position: fixed;
+	width: 42.5%;
+	height: 45px;
+	background-color: white;
+	border-bottom: 2px solid black;
+	padding-left: 2%;
+}
+}
+
+h3{
+	line-height: 0.1;
+}
+
+.li-row{
+	cursor: pointer;
+}

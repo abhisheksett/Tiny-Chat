@@ -1,0 +1,24 @@
+<div class="row complete-height chat-page" ng-init="init()">
+<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 sol-md-offset-2 chatBox">
+	<div class="col-xs-3 col-sm-4 col-md-4 available-user">
+		<ul class="list-group" id="usersList">
+			<li class="list-group-item li-row" ng-repeat='user in allUsers' ng-click="loadChatData(user.username)">
+				{{user.username}}
+				<span ng-show='user.availability' class="availability"><img src="../images/available.png" height="15px" width="15px" /></span>
+				<span ng-show='!user.availability' class="availability"><img src="../images/unavailable.png" height="12px" width="12px"/></span>
+				<span ng-show='user.unreadMessageCount >0' class="badge badge-important pull-right">{{user.unreadMessageCount}}</span>
+			</li>
+		</ul>			
+	</div>
+			<div class="col-xs-9 col-sm-8 col-md-8 complete-height no-padding">
+				<div class="chat-messages">
+					<div class='banner'><h3>{{toUser}}</h3></div>
+					<div style="width:100%;float:left;margin-top:45px" id="container"></div>
+				</div>
+				<div class="chat-type">
+				<textarea class="form-control complete-height custom-textarea-style" ng-model="chatText"></textarea>
+				<button class="btn btn-sm btn-success custom-button" ng-click="send()">Send</button>
+			</div>
+		</div>
+	</div>
+</div>
