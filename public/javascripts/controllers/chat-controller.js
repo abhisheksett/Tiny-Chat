@@ -64,7 +64,7 @@ $scope.createOtherChat = function(text, from, time){
 
 $scope.init = function(){
 
-		$scope.server = io.connect('http://192.168.1.10:3000');
+		$scope.server = io.connect(config.dbUrl+":"+config.dbPort);
 		$scope.server.on('newUser',$scope.newUser);
 		$scope.server.emit('join', {username: $rootScope.current_user});
 		$scope.server.on('message',$scope.recievedMessage);
