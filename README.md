@@ -1,6 +1,6 @@
 ## Tiny Chat
 
-##### This is a small chat application where user can register, login and chat between all users (both individually and in group).
+##### This is a small chat application where user can register, login and chat between all users (both individually and in group). This application is developed using MEAN stack.
 
 ### How it works?
 
